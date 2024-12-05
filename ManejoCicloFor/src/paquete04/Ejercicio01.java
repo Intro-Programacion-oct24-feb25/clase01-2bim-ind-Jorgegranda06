@@ -9,21 +9,19 @@ package paquete04;
  * @author utpl
  */
 public class Ejercicio01 {
-    public static void main(String[] args) {
-        // Primer valor en la primera columna
+     public static void main(String[] args) {
+        int operacion;
+        String cadena = "";
         for (int i = 30; i >= 10; i--) {
-            // Para cada valor de i, se imprime una fila
-            for (int j = 0; j < 4; j++) {
-                // Imprime el valor actual de la columna correspondiente
-                System.out.print(i - j * 2);
-                // Si no es la última columna, imprime un guion
-                if (j < 3) {
-                    System.out.print("-");
-                }
+            cadena = String.format("%s%d", cadena,i);
+            for (int e = 2; e <= 4; e++) {
+                operacion = i * e;
+                cadena = String.format("%s-%d", cadena,
+                         operacion);
             }
-            // Salta a la siguiente línea después de cada fila
-            System.out.println();
+            cadena = String.format("%s\n", cadena);
         }
+         System.out.printf("%s\n", cadena);
     }
 }
 

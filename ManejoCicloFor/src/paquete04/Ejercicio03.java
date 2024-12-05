@@ -9,19 +9,24 @@ package paquete04;
  * @author utpl
  */
 public class Ejercicio03 {
-    public static void main(String[] args) {
-        int operacion;
-        String cadena = "";
-        for (int i = 30; i >= 10; i--) {
-            cadena = String.format("%s%d", cadena,i);
-            for (int e = 2; e <= 4; e++) {
-                operacion = i * e;
-                cadena = String.format("%s-%d", cadena,
-                         operacion);
+   public static void main(String[] args) {
+               
+        for (int i = 1; i <= 5; i++) {
+            for (int contador = 1; contador <= i; contador++) {
+                
+                System.out.printf("%s", "*");
             }
-            cadena = String.format("%s\n", cadena);
+            System.out.println();
+            
         }
-         System.out.printf("%s\n", cadena);
+          for (int i = 5; i >= 1; i--) {
+            for (int contador = 1; contador <= i; contador++) {
+                
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
+        }
+        
     }
 }
                

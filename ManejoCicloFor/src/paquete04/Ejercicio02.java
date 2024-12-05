@@ -10,9 +10,9 @@ package paquete04;
  */
 public class Ejercicio02 {
     public static void main(String[] args) {
-        double fahrenheit = 20.0;
-        double incremento = 4.0;
-        double acumulador = 0.0;
+        double fahrenheit = 20;
+        double incremento = 4;
+        double acumulador = 0;
         double celsius;
 
      for (int i = 0; i <= 20; i++) {
